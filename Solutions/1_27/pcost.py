@@ -2,10 +2,11 @@
 
 total_cost = 0.0
 
-with open('../../Work/Data/portfolio.csv', 'rt') as f:
+with open('F:\\avnish\\1college\\practical-python\\Work\\Data\\portfolio.csv', 'rt') as f:
     headers = next(f)
     for line in f:
         row = line.split(',')
+        print(row)
         nshares = int(row[1])
         price = float(row[2])
         total_cost += nshares * price
